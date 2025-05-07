@@ -17,7 +17,7 @@ A simple API for real-time cryptocurrency price queries, developed with Ruby on 
 - HTTParty (integration with APIs)
 - CoinGecko API
 
-### Instalação
+### Installation
 ```bash
 git clone [your-repository]
 cd crypto_api
