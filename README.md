@@ -5,9 +5,9 @@ A simple API for real-time cryptocurrency price queries, developed with Ruby on 
 ## 📌 Recursos
 
 - Bitcoin and Ethereum price lookup
-Currency conversion
-API health check
-Integrated frontend with HTML/JS/CSS
+- Currency conversion
+- API health check
+- Integrated frontend with HTML/JS/CSS
 
 ## 🛠 Tecnologias
 
