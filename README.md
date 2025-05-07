@@ -2,7 +2,7 @@
 
 A simple API for real-time cryptocurrency price queries, developed with Ruby on Rails.
 
-## 📌 Recursos
+## Features
 
 - Bitcoin and Ethereum price lookup
 - Currency conversion
