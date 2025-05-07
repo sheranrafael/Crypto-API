@@ -1,13 +1,13 @@
-# Crypto API 🚀
+# Crypto API 
 
-Uma API simples para consulta de cotações de criptomoedas em tempo real, desenvolvida com Ruby on Rails.
+A simple API for real-time cryptocurrency price queries, developed with Ruby on Rails.
 
 ## 📌 Recursos
 
-- Consulta de preços de Bitcoin e Ethereum
-- Conversão entre moedas
-- Health check da API
-- Frontend integrado com HTML/JS/CSS
+- Bitcoin and Ethereum price lookup
+Currency conversion
+API health check
+Integrated frontend with HTML/JS/CSS
 
 ## 🛠 Tecnologias
 
