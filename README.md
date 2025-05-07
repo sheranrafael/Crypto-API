@@ -9,23 +9,17 @@ A simple API for real-time cryptocurrency price queries, developed with Ruby on 
 - API health check
 - Integrated frontend with HTML/JS/CSS
 
-## 🛠 Tecnologias
+## Technologies
 
-- Ruby 3.x
-- Rails 8.x
-- SQLite (dev)
-- HTTParty (integração com APIs)
-- CoinGecko API (dados reais)
-
-## ⚡ Como Usar
-
-### Requisitos
-- Ruby 3.x instalado
-- Bundler (`gem install bundler`)
+- Ruby 3.3.7
+- Rails 8.0.2
+- SQLite 3.49.1
+- HTTParty (integration with APIs)
+- CoinGecko API
 
 ### Instalação
 ```bash
-git clone [seu-repositorio]
+git clone [your-repository]
 cd crypto_api
 bundle install
 rails db:create db:migrate
