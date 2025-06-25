@@ -18,7 +18,7 @@ A simple API for real-time cryptocurrency price queries, developed with Ruby on 
 - CoinGecko API
 
 ## Screenshot
-![api](https://github.com/user-attachments/assets/80cd94db-9ea4-4c67-9b19-08d5cdab8f11)
+![Captura de tela 2025-06-25 163136](https://github.com/user-attachments/assets/81859a7f-bfef-465c-adf6-50b836cb13eb)
 
 
 
