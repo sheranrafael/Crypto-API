@@ -13,14 +13,14 @@
             <p>Preços em tempo real</p>
         </header>
 
-        <div class="error-alert" id="error"></div>
+        <div id="error" style="display: none;"></div>
 
         <div class="grid">
             <!-- Seção de Preços -->
             <section class="card">
                 <h2>Cotações</h2>
                 <div id="prices">
-                    <div class="loader"></div>
+                    <div class="loader">Carregando...</div>
                 </div>
             </section>
 
@@ -50,23 +50,17 @@
                 
                 <button id="convert-btn">Converter</button>
                 
-                <div id="result" class="hidden">
+                <div id="result" style="display: none;">
                     <p>Resultado:</p>
                     <p id="converted-amount"></p>
                 </div>
-
-                <div id="error" style="display: none;"></div>
-<div id="prices"></div>
-<div id="result" style="display: none;">
-    Valor convertido: <span id="converted-amount"></span>
-</div>
             </section>
         </div>
     </div>
 
     <footer>
         Dados fornecidos pela API CoinGecko <br> 
-         2025 - Rafael Sheran
+        2025 - Rafael Sheran
     </footer>
 
     <script src="script.js"></script>
