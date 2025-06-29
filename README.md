@@ -13,7 +13,7 @@ A simple API for real-time cryptocurrency price queries, developed with Ruby on 
 
 - Ruby 3.3.7
 - Rails 8.0.2
-- SQLite 3.49.1
+- SQLite 3.50.2
 - HTTParty (integration with APIs)
 - CoinGecko API
 
