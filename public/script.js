@@ -16,18 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const CURRENCIES = ['usd', 'brl'];
   
     // Inicialização
-    initSelects();
     fetchPrices();
     setInterval(fetchPrices, 30000); // Atualiza a cada 30 segundos
   
     // Funções principais
-    function initSelects() {
-      CRYPTOS.forEach(crypto => {
-        fromSelect.add(new Option(crypto.name, crypto.id));
-        toSelect.add(new Option(crypto.name, crypto.id));
-      });
-    }
-  
     async function fetchPrices() {
       try {
         pricesContainer.innerHTML = '<div class="loader">Carregando cotações...</div>';
@@ -74,8 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
       `).join('');
     }
   
-    // Conversão
-    convertBtn.addEventListener('click', async () => {
+    // Conversão - Corrigido para prevenir execução automática
+    convertBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      
       const from = fromSelect.value;
       const to = toSelect.value;
       const amount = parseFloat(amountInput.value);
@@ -92,6 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Erro na conversão:", err);
         showError(err.message || "Erro ao converter");
       }
+    });
+  
+    // Adicionado event listeners para prevenir submit acidental
+    document.querySelectorAll('input').forEach(input => {
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+        }
+      });
     });
   
     async function convertCurrency(from, to, amount) {
@@ -135,4 +138,4 @@ document.addEventListener('DOMContentLoaded', () => {
         ethereum: { usd: 3456.20, brl: 17500.00 }
       };
     }
-  });
+});
